@@ -1,7 +1,8 @@
 # Table of Contents
 1. [Problem](README.md#problem)
 1. [Input Dataset](README.md#input-dataset)
-1. [Overview](README.md#instructions)
+1. [Overview](README.md#overview)
+1. [Run the Code](README.md#run-the-code)
 1. [Output](README.md#output)
 
 # Problem
@@ -16,12 +17,23 @@ The original dataset was obtained from the Centers for Medicare & Medicaid Servi
 
 Main purpose of this coding challenge to assess coding skills and understanding of computer science fundamentals as they are both prerequisites of becoming a data engineer. As we are only allowed to use the default data structures that come with that programming language (you might use I/O libraries). For example, you can code in Python, but you should not use Pandas or any other external libraries. 
 
+1. Error handling : File I/O and type casting errors, validation of input data.
+2. For a faster insertion and search, the Hash Table is implemented using built-in data type dictionary in python.
+3. Implemented using argparse, os, csv and decimal built-in python(3) libraries.
+
+# Run the Code
+
+To run the code, go to pharmacy_counting folder and run "./run.sh" : pharmacy_counting~$./run.sh
+(You may need to change the permission for run.sh script by using "chmod +x run.sh" command.)
+
+The Output can be found @pharmacy_counting/output/top_cost_drug.txt. 
+
 
 # Output 
 
-Your program needs to create the output file, `top_cost_drug.txt`, that contains comma (`,`) separated fields in each line.
+Output file is comma (`,`) separated fields in each line.
 
-Each line of this file should contain these fields:
+Each line of this file contain these fields:
 * drug_name: the exact drug name as shown in the input dataset
 * num_prescriber: the number of unique prescribers who prescribed the drug. For the purposes of this challenge, a prescriber is considered the same person if two lines share the same prescriber first and last names
 * total_cost: total cost of the drug across all prescribers
@@ -48,24 +60,6 @@ AMBIEN,2,300
 
 These files are provided in the `insight_testsuite/tests/test_1/input` and `insight_testsuite/tests/test_1/output` folders, respectively.
 
-
-# Tips on getting an interview
-
-## Writing clean, scalable and well-tested code
-
-As a data engineer, it’s important that you write clean, well-documented code that scales for a large amount of data. For this reason, it’s important to ensure that your solution works well for a large number of records, rather than just the above example.
-
-<a href="https://drive.google.com/file/d/1fxtTLR_Z5fTO-Y91BnKOQd6J0VC9gPO3/view?usp=sharing">Here</a> you can find a large dataset containing over 24 million records. Note, we will use it to test the full functionality of your code, along with other tests.
-
-It's also important to use software engineering best practices like unit tests, especially since data is not always clean and predictable.
-
-Before submitting your solution you should summarize your approach and run instructions (if any) in your `README`.
-
-You may write your solution in any mainstream programming language, such as C, C++, C#, Go, Java, Python, Ruby, or Scala. Once completed, submit a link of your Github or Bitbucket repo with your source code.
-
-In addition to the source code, the top-most directory of your repo must include the `input` and `output` directories, and a shell script named `run.sh` that compiles and runs the program(s) that implement(s) the required features.
-
-If your solution requires additional libraries, environments, or dependencies, you must specify these in your `README` documentation. See the figure below for the required structure of the top-most directory in your repo, or simply clone this repo.
 
 ## Repo directory structure
 
