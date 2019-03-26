@@ -1,7 +1,6 @@
 150 UNIQUE Pres_ids
 
-
-drug_name,num_prescriber,total_cost
-CHLORPROMAZINE,60,90000
-BENZTROPINE MESYLATE,30,45000
+drug_name,num_prescriber,total_cost\
+CHLORPROMAZINE,60,90000\
+BENZTROPINE MESYLATE,30,45000\
 AMBIEN,60,9000

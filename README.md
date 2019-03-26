@@ -4,6 +4,7 @@
 1. [Overview](README.md#overview)
 1. [Run the Code](README.md#run-the-code)
 1. [Output](README.md#output)
+1. [Testsuits](README.md#testsuits)
 1. [Contacts](README.md#contacts)
 
 # Problem
@@ -61,6 +62,17 @@ AMBIEN,2,300
 
 These files are provided in the `insight_testsuite/tests/test_1/input` and `insight_testsuite/tests/test_1/output` folders, respectively.
 
+# Testsuits
+
+Testsuits are implemented as per quality code, along with given sample test case.
+
+ * test_1: tests file given by INSIGHT
+ * test_2: tests whether code can deal with DRUG_COST=0 (Also, Floating point precision to assure same result)
+ * test_3: tests whether code can deal with Invalid DRUG_COST= -400
+ * test_4: tests whether code can deal with Invalid PRES_ID = -1000000003
+ * test_5: tests whether code can work with 150 records with UNIQUE PRES_ID's.
+ * test_6: tests the result when extra name with UNIQUE PRES_ID but DRUG_NAME Has "-"
+ * test_7: tests whether code can deal with MISSING Values in Data Item
 
 ## Repo directory structure
 
@@ -82,9 +94,13 @@ These files are provided in the `insight_testsuite/tests/test_1/input` and `insi
             |   │   └── itcont.txt
             |   |__ output
             |   │   └── top_cost_drug.txt
-            ├── your-own-test_1
+	    . . .
+	    . . .
+	    . . .
+	    . . .
+            ├── test_7
                 ├── input
-                │   └── your-own-input-for-itcont.txt
+                │   └── itcont.txt
                 |── output
                     └── top_cost_drug.txt
 
