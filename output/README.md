@@ -1,6 +1,1 @@
-MISSING DATA AS 4th RECOED DIDN'T HAVE PRES_LAST_NAME
-
-drug_name,num_prescriber,total_cost
-BENZTROPINE MESYLATE,1,1500
-CHLORPROMAZINE,1,1000
-AMBIEN,2,300
+This directory is where we would expect your program to write the requested output files.
