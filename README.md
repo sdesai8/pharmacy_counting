@@ -4,6 +4,7 @@
 1. [Overview](README.md#overview)
 1. [Run the Code](README.md#run-the-code)
 1. [Output](README.md#output)
+1. [Contacts](README.md#contacts)
 
 # Problem
 
@@ -63,12 +64,12 @@ These files are provided in the `insight_testsuite/tests/test_1/input` and `insi
 
 ## Repo directory structure
 
-The directory structure for your repo should look like this:
 
     ├── README.md 
     ├── run.sh
     ├── src
-    │   └── pharmacy-counting.py
+    │   └── pharmacy_counting.py
+    |   └── helper_functions.py
     ├── input
     │   └── itcont.txt
     ├── output
@@ -87,35 +88,8 @@ The directory structure for your repo should look like this:
                 |── output
                     └── top_cost_drug.txt
 
-**Don't fork this repo** and don't use this `README` instead of your own. The content of `src` does not need to be a single file called `pharmacy-counting.py`, which is only an example. Instead, you should include your own source files and give them expressive names.
 
-## Testing your directory structure and output format
-
-To make sure that your code has the correct directory structure and the format of the output files are correct, we have included a test script called `run_tests.sh` in the `insight_testsuite` folder.
-
-The tests are stored simply as text files under the `insight_testsuite/tests` folder. Each test should have a separate folder with an `input` folder for `itcont.txt` and an `output` folder for `top_cost_drug.txt`.
-
-You can run the test with the following command from within the `insight_testsuite` folder:
-
-    insight_testsuite~$ ./run_tests.sh 
-
-On a failed test, the output of `run_tests.sh` should look like:
-
-    [FAIL]: test_1
-    [Thu Mar 30 16:28:01 PDT 2017] 0 of 1 tests passed
-
-On success:
-
-    [PASS]: test_1
-    [Thu Mar 30 16:25:57 PDT 2017] 1 of 1 tests passed
-
-
-
-One test has been provided as a way to check your formatting and simulate how we will be running tests when you submit your solution. We urge you to write your own additional tests. `test_1` is only intended to alert you if the directory structure or the output for this test is incorrect.
-
-Your submission must pass at least the provided test in order to pass the coding challenge.
-
-For a limited time we also are making available a <a href="http://ec2-18-210-131-67.compute-1.amazonaws.com/test-my-repo-link">website</a> that will allow you to simulate the environment in which we will test your code. It has been primarily tested on Python code but could be used for Java and C++ repos. Keep in mind that if you need to compile your code (e.g., javac, make), that compilation needs to happen in the `run.sh` file of your code repository. For Python programmers, you are able to use Python2 or Python3 but if you use the later, specify `python3` in your `run.sh` script.
-
-# Questions?
-Email us at cc@insightdataengineering.com
+# Contacts
+Questions? Please feel free to connect over email (sdesai8@binghamton.edu)
+Thank you,
+Savankumar Desai
